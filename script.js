@@ -178,15 +178,15 @@ async function startQuizFlow() {
 async function initializeQuizQueue() {
     showLoading(true);
     try {
-        const { data, error } = await _supabase.from('questions').select('*');
-        if (error) throw error;
+        // Use local data instead of Supabase
+        const data = QUESTIONS_DATA;
 
         if (!data || data.length === 0) {
-            alert("No questions found in your Supabase 'questions' table. Please check if you successfully imported the CSV! (Refer to walkthrough.md)");
+            console.error("Local question data is empty!");
             return;
         }
 
-        // 1. Remove duplicates based on question text (because the CSV has duplicates)
+        // 1. Remove duplicates based on question text (extra safety)
         const uniquePool = [];
         const seenTexts = new Set();
 
@@ -207,8 +207,7 @@ async function initializeQuizQueue() {
         // 3. Keep exactly MAX_QUESTIONS or less if pool is small
         quizQueue = uniquePool.slice(0, MAX_QUESTIONS);
     } catch (err) {
-        console.error('SUPABASE_FETCH_ERROR:', err);
-        alert(`Supabase Error: ${err.message || 'Check your database policies and table structure.'}`);
+        console.error('INITIALIZE_QUEUE_ERROR:', err);
     } finally {
         showLoading(false);
     }
