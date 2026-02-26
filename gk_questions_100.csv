@@ -1,0 +1,101 @@
+question,correct_answer,category,difficulty,explanation
+"Is the Sun a star?",TRUE,Science,Easy,The Sun is a star at the center of the solar system.
+"Does sound travel in a vacuum?",FALSE,Physics,Easy,Sound requires a medium like air or water to travel.
+"Is the Great Wall of China visible from the moon with the naked eye?",FALSE,Geography,Medium,It is generally not visible without aid from such a distance.
+"Is a group of pandas called an 'embarrassment'?",TRUE,Nature,Hard,That is the scientific collective noun for pandas.
+"Was the first iPhone released in 2007?",TRUE,Technology,Easy,Steve Jobs unveiled the first iPhone on January 9, 2007.
+"Is the capital of Australia Sydney?",FALSE,Geography,Easy,The capital city of Australia is Canberra.
+"Does water boil at a lower temperature at high altitudes?",TRUE,Science,Medium,Lower atmospheric pressure reduces the boiling point.
+"Is Gold the most abundant metal in Earth's crust?",FALSE,Science,Medium,Aluminum is the most abundant metal in the crust.
+"Was Alexander the Great a pupil of Aristotle?",TRUE,History,Medium,Aristotle tutored Alexander for several years in his youth.
+"Is the human heart located on the right side of the chest?",FALSE,Biology,Easy,The heart is typically located on the left side of the chest.
+"Is Venus the hottest planet in our solar system?",TRUE,Space,Medium,Its thick atmosphere traps heat, reaching temperatures over 460°C.
+"Was Leonardo da Vinci the painter of 'The Starry Night'?",FALSE,Art,Easy,Vincent van Gogh painted 'The Starry Night'.
+"Is the Nile the longest river in the world?",TRUE,Geography,Easy,The Nile is widely considered the longest river on Earth.
+"Can sharks swim backwards?",FALSE,Nature,Medium,Most sharks lack the fin structures required to swim backwards.
+"Is the chemical symbol for Silver 'Au'?",FALSE,Science,Easy,'Au' is for Gold; Silver is 'Ag'.
+"Was the Berlin Wall torn down in 1989?",TRUE,History,Easy,The wall fell on November 9, 1989.
+"Is a triangle with all equal sides called a scalene triangle?",FALSE,Math,Easy,It is an equilateral triangle.
+"Does the human body have four lungs?",FALSE,Biology,Easy,Humans have two lungs.
+"Is Mount Kilimanjaro the tallest mountain in Africa?",TRUE,Geography,Easy,It is a dormant volcano in Tanzania.
+"Was the internet originally a military project known as ARPANET?",TRUE,Technology,Medium,It was funded by the US Department of Defense.
+"Is the Amazon rainforest located primarily in Brazil?",TRUE,Geography,Easy,Over 60% of the rainforest is in Brazil.
+"Is the element Oxygen a liquid at room temperature?",FALSE,Science,Easy,Oxygen is a gas at room temperature.
+"Was the Eiffel Tower intended to be a temporary structure?",TRUE,History,Medium,It was built for the 1889 World's Fair and slated for demolition after 20 years.
+"Is a octopus considered a mammal?",FALSE,Nature,Easy,Octopuses are cephalopod mollusks.
+"Is the speed of light faster than the speed of sound?",TRUE,Physics,Easy,Light travels at ~300,000 km/s, sound at ~0.34 km/s.
+"Was the Magna Carta signed in 1215?",TRUE,History,Medium,King John signed it at Runnymede in June 1215.
+"Is the Sahara the largest desert in the world?",FALSE,Geography,Hard,Antarctica is the largest desert; Sahara is the largest hot desert.
+"Is the capital of Japan Osaka?",FALSE,Geography,Easy,The capital of Japan is Tokyo.
+"Does the moon produce its own light?",FALSE,Space,Easy,The moon reflects light from the sun.
+"Is the human brain the largest organ in the human body?",FALSE,Biology,Easy,The skin is the largest organ.
+"Was George Washington the first president of the United States?",TRUE,History,Easy,He served from 1789 to 1797.
+"Is a marathon 26.2 miles long?",TRUE,Sports,Easy,The official distance is 42.195 kilometers.
+"Is the Pacific Ocean the deepest ocean on Earth?",TRUE,Geography,Easy,It contains the Mariana Trench, the deepest point.
+"Is the square root of 144 equal to 12?",TRUE,Math,Easy,12 times 12 is 144.
+"Is the Statue of Liberty a gift from France?",TRUE,History,Easy,It was dedicated in 1886 to commemorate US independence.
+"Is the planet Mars known as the 'Blue Planet'?",FALSE,Space,Easy,Earth is the Blue Planet; Mars is the Red Planet.
+"Can an ostrich fly?",FALSE,Nature,Easy,Ostriches are flightless birds.
+"Is the capital of Canada Toronto?",FALSE,Geography,Easy,The capital of Canada is Ottawa.
+"Was the Titanic sunk by an iceberg in 1912?",TRUE,History,Easy,The tragedy occurred on its maiden voyage in April 1912.
+"Is the freezing point of water 0 degrees Celsius?",TRUE,Science,Easy,At standard atmospheric pressure, water freezes at 0°C.
+"Is a spider an insect?",FALSE,Nature,Easy,Spiders are arachnids (8 legs, not 6).
+"Is the Mona Lisa located in the British Museum?",FALSE,Art,Easy,The Mona Lisa is in the Louvre Museum in Paris.
+"Is the Great Barrier Reef the largest living structure on Earth?",TRUE,Nature,Medium,It can be seen from space.
+"Was the desktop computer mouse invented by Xerox?",TRUE,Technology,Hard,Xerox PARC developed a commercial mouse, though Douglas Engelbart created the first prototype.
+"Is the capital of Italy Rome?",TRUE,Geography,Easy,Rome has been the capital since 1871.
+"Does the human skeleton have more bones as an adult than as a baby?",FALSE,Biology,Medium,Babies have about 300 bones, many of which fuse together to form 206 as adults.
+"Is the currency of the United Kingdom the Euro?",FALSE,Finance,Easy,The UK uses the Pound Sterling.
+"Was Abraham Lincoln the 16th President of the United States?",TRUE,History,Easy,He served during the American Civil War.
+"Is a leap year occurring every 4 years?",TRUE,General,Easy,It occurs in years divisible by 4 (with some exceptions for century years).
+"Is the North Pole located on a continent?",FALSE,Geography,Medium,The North Pole is located in the Arctic Ocean, covered by shifting sea ice.
+"Is the atom the smallest unit of matter?",FALSE,Science,Medium,Subatomic particles like quarks and leptons are smaller.
+"Was the first successful airplane flight by the Wright Brothers in 1903?",TRUE,History,Easy,It took place at Kitty Hawk, North Carolina.
+"Is the capital of Russia Saint Petersburg?",FALSE,Geography,Easy,The capital is Moscow.
+"Does honey never spoil?",TRUE,Nature,Medium,Archaeologists have found pots of honey in ancient Egyptian tombs that are still edible.
+"Is the ostrich the largest bird in the world?",TRUE,Nature,Easy,It can grow up to 9 feet tall and weigh 300 pounds.
+"Is the Pacific Ocean smaller than the Atlantic Ocean?",FALSE,Geography,Easy,The Pacific is the largest ocean.
+"Was Albert Einstein the author of the theory of relativity?",TRUE,Science,Easy,He published General Relativity in 1915.
+"Is the human heart a muscle?",TRUE,Biology,Easy,It is a specialized cardiac muscle.
+"Is the capital of Spain Madrid?",TRUE,Geography,Easy,Madrid has been the capital since 1561.
+"Does the Earth revolve around the Sun in a perfectly circular orbit?",FALSE,Space,Medium,The orbit is slightly elliptical (egg-shaped).
+"Is the Great Wall of China a single continuous wall?",FALSE,History,Medium,It is a series of walls and fortifications built over many centuries.
+"Is the diamond the hardest natural substance on Earth?",TRUE,Science,Easy,It scores a 10 on the Mohs scale.
+"Was the first man on the moon Neil Armstrong?",TRUE,History,Easy,He landed on July 20, 1969.
+"Is the capital of Germany Munich?",FALSE,Geography,Easy,The capital of Germany is Berlin.
+"Do dolphins use echolocation to find food?",TRUE,Nature,Easy,They emit sound waves that bounce off objects.
+"Is the Amazon river the widest river in the world?",TRUE,Geography,Hard,During the wet season, it can be up to 30 miles wide.
+"Was the telephone invented by Thomas Edison?",FALSE,Technology,Easy,Alexander Graham Bell is credited with the invention.
+"Is the human lung capacity larger in the left lung than the right?",FALSE,Biology,Medium,The right lung is larger; the left is smaller to make room for the heart.
+"Is the capital of Turkey Istanbul?",FALSE,Geography,Easy,The capital of Turkey is Ankara.
+"Does the Earth rotate on its axis once every 24 hours?",TRUE,Space,Easy,This rotation creates the day and night cycle.
+"Is the Great Pyramid of Giza the oldest of the Seven Wonders of the Ancient World?",TRUE,History,Medium,It is also the only one that remains largely intact.
+"Is the chemical symbol for Iron 'Fe'?",TRUE,Science,Easy,It comes from the Latin word 'ferrum'.
+"Was the first satellite launched into space named Sputnik?",TRUE,History,Medium,It was launched by the Soviet Union in 1957.
+"Is the capital of Brazil Rio de Janeiro?",FALSE,Geography,Easy,The capital is Brasília.
+"Do polar bears live in Antarctica?",FALSE,Nature,Easy,Polar bears live in the Arctic; penguins live in Antarctica.
+"Is the Grand Canyon located in the state of California?",FALSE,Geography,Easy,It is located in Arizona.
+"Was the light bulb invented solely by Thomas Edison?",FALSE,History,Medium,While he perfected the commercial bulb, many others had worked on similar designs earlier.
+"Is the human body approximately 60% water?",TRUE,Biology,Easy,Varies by age and sex, but 60% is the average for adults.
+"Is the capital of Greece Athens?",TRUE,Geography,Easy,Athens is one of the world's oldest cities.
+"Does a octopus have three hearts?",TRUE,Nature,Medium,Two pump blood to the gills, one to the rest of the body.
+"Is the Great Sphinx of Giza thought to represent a pharaoh?",TRUE,History,Medium,It is commonly believed to represent Pharaoh Khafre.
+"Is the chemical symbol for Sodium 'So'?",FALSE,Science,Easy,The symbol for Sodium is 'Na'.
+"Was the first computer programmer a woman named Ada Lovelace?",TRUE,Technology,Hard,She wrote the first algorithm intended for a machine in the 1840s.
+"Is the capital of Egypt Cairo?",TRUE,Geography,Easy,Cairo is the largest city in Africa and the Middle East.
+"Do snakes have ears?",FALSE,Nature,Medium,They lack external ears but can feel vibrations through their jawbones.
+"Is the Earth's core solid?",TRUE,Earth,Medium,The inner core is a solid ball of iron and nickel.
+"Was the American Civil War fought between 1861 and 1865?",TRUE,History,Easy,It was between the Northern Union and Southern Confederacy.
+"Is the capital of India Mumbai?",FALSE,Geography,Easy,The capital of India is New Delhi.
+"Does a year on Jupiter last 12 Earth years?",TRUE,Space,Hard,Jupiter takes about 11.86 Earth years to orbit the Sun.
+"Is the Great Wall of China visible from the International Space Station without magnification?",TRUE,Space,Hard,Some astronauts state it is visible under perfect conditions, unlike the moon.
+"Is the chemical symbol for Potassium 'P'?",FALSE,Science,Easy,The symbol for Potassium is 'K'.
+"Was the first video game 'Pong'?",FALSE,Technology,Medium,'Tennis for Two' or 'Spacewar!' preceded Pong.
+"Is the capital of South Korea Seoul?",TRUE,Geography,Easy,Seoul is one of the most populous cities in the world.
+"Do cats have fewer bones in their bodies than humans?",FALSE,Nature,Hard,Cats have about 230-250 bones, while humans have 206.
+"Is the Earth's atmosphere composed mostly of Oxygen?",FALSE,Science,Medium,Nitrogen makes up 78%, Oxygen only 21%.
+"Was the United Nations formed after World War I?",FALSE,History,Easy,The League of Nations was after WWI; the UN was after WWII.
+"Is the capital of Mexico Mexico City?",TRUE,Geography,Easy,It is built on the ruins of the Aztec capital, Tenochtitlan.
+"Does a snail have more teeth than a shark?",TRUE,Nature,Hard,Some snails have over 14,000 microscopic teeth on their radula.
+"Is the Great Barrier Reef located off the coast of Australia?",TRUE,Geography,Easy,It is in the Coral Sea, off the coast of Queensland.
+"Was the printing press invented by Johannes Gutenberg?",TRUE,History,Easy,He introduced it to Europe around 1440.

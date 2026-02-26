@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GK Insight — Yes/No Knowledge Analyzer</title>
+    <meta name="description"
+        content="Test your general knowledge with GK Insight. Answer Yes/No questions and analyze your accuracy.">
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <!-- Supabase JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <!-- jsPDF CDN for PDF Generation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+
+<body>
+    <div class="background-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <main class="container">
+        <header class="app-header">
+            <h1 class="glow-text">GK Insight</h1>
+            <p class="subtitle">Knowledge Analyzer</p>
+        </header>
+
+        <section id="welcome-screen" class="card glass">
+            <h2 class="glow-text">Welcome!</h2>
+            <p class="description">Enter your name to start the General Knowledge challenge.</p>
+            <div class="input-group">
+                <input type="text" id="user-name-input" placeholder="Your Name" class="glass-input">
+                <button id="btn-start" class="btn btn-yes" onclick="startQuizFlow()">
+                    Start Quiz <span class="icon">🚀</span>
+                </button>
+            </div>
+        </section>
+
+        <section class="stats-bar glass hidden" id="status-bar">
+            <div class="stat-item user-info">
+                <span class="label">Player</span>
+                <span id="display-name" class="value">Guest</span>
+            </div>
+            <div class="stat-item">
+                <span class="label">Attempts</span>
+                <span id="total-attempts" class="value">0</span>
+            </div>
+            <div class="stat-item">
+                <span class="label">Accuracy</span>
+                <span id="accuracy-pct" class="value">0%</span>
+            </div>
+            <div class="stat-item">
+                <span class="label">Level</span>
+                <span id="user-level" class="value">Beginner</span>
+            </div>
+        </section>
+
+        <section id="game-card" class="card glass hidden">
+            <div id="loading-state" class="loading-overlay">
+                <div class="spinner"></div>
+                <p>Fetching Question...</p>
+            </div>
+
+            <div class="card-content">
+                <div class="meta-info">
+                    <span id="category-tag" class="badge">General</span>
+                    <span id="difficulty-tag" class="badge">Normal</span>
+                </div>
+
+                <h2 id="question-text" class="question">Ready to test your knowledge?</h2>
+
+                <div id="action-buttons" class="button-group">
+                    <button id="btn-yes" class="btn btn-yes" onclick="handleAnswer(true)">
+                        <span class="icon">✅</span> YES
+                    </button>
+                    <button id="btn-no" class="btn btn-no" onclick="handleAnswer(false)">
+                        <span class="icon">❌</span> NO
+                    </button>
+                </div>
+
+                <div id="result-section" class="result-section hidden">
+                    <div id="result-message" class="result-message"></div>
+                    <div class="explanation-box">
+                        <p id="explanation-text"></p>
+                    </div>
+                    <div class="next-timer">
+                        <span>Next question in <span id="countdown">3</span>s...</span>
+                        <button id="btn-skip" class="btn-link" onclick="skipToNext()">Skip <span
+                                class="icon">➡️</span></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="summary-screen" class="card glass hidden">
+            <h2 class="glow-text">Quiz Complete!</h2>
+            <div class="final-stats">
+                <div class="stat-big">
+                    <span class="label">Total Score</span>
+                    <span id="final-score" class="value">0/10</span>
+                </div>
+                <div class="stat-big">
+                    <span class="label">Accuracy</span>
+                    <span id="final-accuracy" class="value">0%</span>
+                </div>
+                <div class="stat-big">
+                    <span class="label">Assigned Level</span>
+                    <span id="final-level" class="value">Beginner</span>
+                </div>
+            </div>
+
+            <div class="summary-actions">
+                <button id="btn-download" class="btn btn-download" onclick="downloadResults()">
+                    <span class="icon">📥</span> Download Results
+                </button>
+                <button id="btn-restart" class="btn btn-restart" onclick="restartQuiz()">
+                    <span class="icon">🔄</span> Play Again
+                </button>
+            </div>
+        </section>
+
+        <div class="progress-container">
+            <div id="progress-bar" class="progress-bar"></div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
