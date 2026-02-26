@@ -84,6 +84,11 @@ async function initializeQuizQueue() {
         const { data, error } = await _supabase.from('questions').select('*');
         if (error) throw error;
 
+        if (!data || data.length === 0) {
+            alert("No questions found in your Supabase 'questions' table. Please check if you successfully imported the CSV! (Refer to walkthrough.md)");
+            return;
+        }
+
         // 1. Remove duplicates based on question text (because the CSV has duplicates)
         const uniquePool = [];
         const seenTexts = new Set();
@@ -105,7 +110,8 @@ async function initializeQuizQueue() {
         // 3. Keep exactly MAX_QUESTIONS or less if pool is small
         quizQueue = uniquePool.slice(0, MAX_QUESTIONS);
     } catch (err) {
-        console.error('Error initializing quiz queue:', err);
+        console.error('SUPABASE_FETCH_ERROR:', err);
+        alert(`Supabase Error: ${err.message || 'Check your database policies and table structure.'}`);
     } finally {
         showLoading(false);
     }

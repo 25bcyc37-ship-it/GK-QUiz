@@ -52,5 +52,16 @@ The app has been verified for:
 - [x] Accurate logic for skip buttons and countdown timers.
 - [x] PDF generation with correct player name and stats.
 
+## ⚠️ Troubleshooting Fetch Issues
+
+If you see a "Fetching Question..." screen that doesn't advance, or an alert showing a Supabase error:
+
+1. **Check Table Existence**: Ensure your table is named exactly `questions` (lowercase).
+2. **Check RLS Policies**: Go to your Supabase Dashboard -> **Authentication** -> **Policies**.
+   - Create a policy for `questions` allowing **SELECT** access for `public`.
+   - Create a policy for `user_answers` allowing **INSERT** access for `public`.
+3. **Check Data**: Ensure you imported your questions. Run `SELECT count(*) FROM questions;` in the SQL Editor to verify it's not zero.
+4. **Console Logs**: Right-click the page -> **Inspect** -> **Console** to see detailed `SUPABASE_FETCH_ERROR` messages.
+
 ---
 Built with Antigravity 🧠
