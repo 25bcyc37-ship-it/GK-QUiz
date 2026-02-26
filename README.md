@@ -57,7 +57,12 @@ The app has been verified for:
 If you see a "Fetching Question..." screen that doesn't advance, or an alert showing a Supabase error:
 
 1. **Check Table Existence**: Ensure your table is named exactly `questions` (lowercase).
-2. **Check RLS Policies**: Go to your Supabase Dashboard -> **Authentication** -> **Policies**.
+2. **Fix CORS Policy (Critical for Vercel)**: 
+   - Go to your **Supabase Dashboard** -> **Project Settings** -> **API**.
+   - Look for the **CORS** section (Site URL / Additional Redirect URLs).
+   - Add `https://gk-q-uiz.vercel.app` (or your specific Vercel URL) to the allowed origins.
+   - Alternatively, you can set it to `*` to allow all domains.
+3. **Check RLS Policies**: Go to your Supabase Dashboard -> **Authentication** -> **Policies**.
    - Create a policy for `questions` allowing **SELECT** access for `public`.
    - Create a policy for `user_answers` allowing **INSERT** access for `public`.
 3. **Check Data**: Ensure you imported your questions. Run `SELECT count(*) FROM questions;` in the SQL Editor to verify it's not zero.
