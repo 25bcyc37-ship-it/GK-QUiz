@@ -2,7 +2,7 @@
 
 // --- Local Question Data ---
 const QUESTIONS_DATA = [
-    { question: "Is the Sun a star?", correct_answer: true, category: "Science", difficulty: "Easy", explanation: "The Sun is a star at the center of the solar system." },
+    { question: "Is the Sun a star", correct_answer: true, category: "Science", difficulty: "Easy", explanation: "The Sun is a star at the center of the solar system." },
     { question: "Does sound travel in a vacuum?", correct_answer: false, category: "Physics", difficulty: "Easy", explanation: "Sound requires a medium like air or water to travel." },
     { question: "Is the Great Wall of China visible from the moon with the naked eye?", correct_answer: false, category: "Geography", difficulty: "Medium", explanation: "It is generally not visible without aid from such a distance." },
     { question: "Is a group of pandas called an 'embarrassment'?", correct_answer: true, category: "Nature", difficulty: "Hard", explanation: "That is the scientific collective noun for pandas." },
