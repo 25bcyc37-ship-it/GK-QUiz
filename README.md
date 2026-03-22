@@ -1,4 +1,4 @@
-# GK Insight — Yes/No Knowledge Analyzer
+# GK Insight — Yes/No Knowledg Analyzer
 
 GK Insight is a modern, responsive web application for testing general knowledge through Yes/No questions. It features a sleek dark mode with glassmorphism aesthetics and real-time performance tracking.
 
