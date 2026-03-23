@@ -125,6 +125,7 @@ def home():
 
 @app.route("/questions")
 def get_questions():
+    print("QUESTIONS ROUTE HIT")
     return jsonify(random.sample(QUESTIONS, 10))
 
 
