@@ -69,7 +69,7 @@ async function startQuizFlow() {
     loadNewQuestion();
 }
 
-// 🔥 UPDATED: Fetch from backend
+// 🔥 Fetch from backend
 async function initializeQuizQueue() {
     showLoading(true);
     try {
@@ -166,6 +166,50 @@ async function restartQuiz() {
     await initializeQuizQueue();
     loadNewQuestion();
 }
+
+// ✅🔥 PDF DOWNLOAD FUNCTION (ADDED)
+function downloadResults() {
+    const { jsPDF } = window.jspdf;
+    const doc = new jsPDF();
+
+    let y = 20;
+
+    doc.setFontSize(18);
+    doc.text("GK Insight - Quiz Results", 20, y);
+    y += 10;
+
+    doc.setFontSize(12);
+    doc.text(`Player: ${userName}`, 20, y);
+    y += 8;
+    doc.text(`Score: ${stats.correct_answers}/${MAX_QUESTIONS}`, 20, y);
+    y += 8;
+    doc.text(`Accuracy: ${stats.accuracy}%`, 20, y);
+    y += 10;
+
+    sessionQuestions.forEach((q, i) => {
+        if (y > 270) {
+            doc.addPage();
+            y = 20;
+        }
+
+        doc.setFontSize(10);
+        doc.text(`${i + 1}. ${q.question}`, 20, y);
+        y += 6;
+
+        doc.text(`Your Answer: ${q.user_answer ? 'Yes' : 'No'}`, 25, y);
+        y += 5;
+
+        doc.text(`Correct Answer: ${q.correct_answer ? 'Yes' : 'No'}`, 25, y);
+        y += 5;
+
+        doc.text(`Explanation: ${q.explanation}`, 25, y);
+        y += 10;
+    });
+
+    doc.save("GK_Insight_Results.pdf");
+}
+
+// --- UI Helpers ---
 
 function showResult(isCorrect) {
     resultSection.classList.remove('hidden');
